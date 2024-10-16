@@ -1,0 +1,15 @@
+{
+  "name": "schema-creation",
+  "version": "1.0.0",
+  "description": "Service to create huge number of schema using uml ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rumman",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.7",
+    "express": "^4.21.1"
+  }
+}

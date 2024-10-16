@@ -1,0 +1,2527 @@
+[
+  {
+    "className": "RailwayNetworkControl",
+    "attributes": [
+      {
+        "name": "Control_ID",
+        "type": "string",
+        "required": true,
+        "primaryKey": true
+      },
+      {
+        "name": "Control_Name",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "Power_Status",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "Timestamp",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "purge_id",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      }
+    ]
+  },
+  {
+    "className": "TrackMonitoringSystem",
+    "attributes": [
+      {
+        "name": "Monitor_ID",
+        "type": "string",
+        "required": true,
+        "primaryKey": true
+      },
+      {
+        "name": "Track_ID",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "Condition_Status",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "Timestamp",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "purge_id",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      }
+    ]
+  },
+  {
+    "className": "SwitchingMechanism",
+    "attributes": [
+      {
+        "name": "Switch_ID",
+        "type": "string",
+        "required": true,
+        "primaryKey": true
+      },
+      {
+        "name": "Position",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "Voltage_Input",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "Timestamp",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "purge_id",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      }
+    ]
+  },
+  {
+    "className": "SignalControlUnit",
+    "attributes": [
+      {
+        "name": "Signal_ID",
+        "type": "string",
+        "required": true,
+        "primaryKey": true
+      },
+      {
+        "name": "Signal_Type",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "Status",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "Timestamp",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "purge_id",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      }
+    ]
+  },
+  {
+    "className": "PowerDistributionUnit",
+    "attributes": [
+      {
+        "name": "PowerDist_ID",
+        "type": "string",
+        "required": true,
+        "primaryKey": true
+      },
+      {
+        "name": "Voltage_Output",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "Current_Output",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "Timestamp",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "purge_id",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      }
+    ]
+  },
+  {
+    "className": "TrackStressSensor",
+    "attributes": [
+      {
+        "name": "StressSensor_ID",
+        "type": "string",
+        "required": true,
+        "primaryKey": true
+      },
+      {
+        "name": "Stress_Level",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "Timestamp",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "purge_id",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      }
+    ]
+  },
+  {
+    "className": "TrackWearSensor",
+    "attributes": [
+      {
+        "name": "WearSensor_ID",
+        "type": "string",
+        "required": true,
+        "primaryKey": true
+      },
+      {
+        "name": "Wear_Level",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "Timestamp",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "purge_id",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      }
+    ]
+  },
+  {
+    "className": "TrackObstructionSensor",
+    "attributes": [
+      {
+        "name": "ObstructionSensor_ID",
+        "type": "string",
+        "required": true,
+        "primaryKey": true
+      },
+      {
+        "name": "Obstruction_Status",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "Timestamp",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "purge_id",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      }
+    ]
+  },
+  {
+    "className": "TrackVibrationSensor",
+    "attributes": [
+      {
+        "name": "VibrationSensor_ID",
+        "type": "string",
+        "required": true,
+        "primaryKey": true
+      },
+      {
+        "name": "Vibration_Level",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "Timestamp",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "purge_id",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      }
+    ]
+  },
+  {
+    "className": "SwitchPositionSensor",
+    "attributes": [
+      {
+        "name": "PositionSensor_ID",
+        "type": "string",
+        "required": true,
+        "primaryKey": true
+      },
+      {
+        "name": "Position",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "Timestamp",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "purge_id",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      }
+    ]
+  },
+  {
+    "className": "SwitchControlLever",
+    "attributes": [
+      {
+        "name": "ControlLever_ID",
+        "type": "string",
+        "required": true,
+        "primaryKey": true
+      },
+      {
+        "name": "Position",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "Timestamp",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "purge_id",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      }
+    ]
+  },
+  {
+    "className": "SwitchPowerMonitor",
+    "attributes": [
+      {
+        "name": "PowerMonitor_ID",
+        "type": "string",
+        "required": true,
+        "primaryKey": true
+      },
+      {
+        "name": "Voltage_Level",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "Timestamp",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "purge_id",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      }
+    ]
+  },
+  {
+    "className": "SwitchFeedbackSystem",
+    "attributes": [
+      {
+        "name": "FeedbackSystem_ID",
+        "type": "string",
+        "required": true,
+        "primaryKey": true
+      },
+      {
+        "name": "Status",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "Timestamp",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "purge_id",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      }
+    ]
+  },
+  {
+    "className": "SignalLightController",
+    "attributes": [
+      {
+        "name": "LightController_ID",
+        "type": "string",
+        "required": true,
+        "primaryKey": true
+      },
+      {
+        "name": "Light_Status",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "Timestamp",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "purge_id",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      }
+    ]
+  },
+  {
+    "className": "SignalTimer",
+    "attributes": [
+      {
+        "name": "Timer_ID",
+        "type": "string",
+        "required": true,
+        "primaryKey": true
+      },
+      {
+        "name": "Time_Interval",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "Timestamp",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "purge_id",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      }
+    ]
+  },
+  {
+    "className": "SignalStatusMonitor",
+    "attributes": [
+      {
+        "name": "StatusMonitor_ID",
+        "type": "string",
+        "required": true,
+        "primaryKey": true
+      },
+      {
+        "name": "Signal_Status",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "Timestamp",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "purge_id",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      }
+    ]
+  },
+  {
+    "className": "RemoteSignalTransmitter",
+    "attributes": [
+      {
+        "name": "Transmitter_ID",
+        "type": "string",
+        "required": true,
+        "primaryKey": true
+      },
+      {
+        "name": "Signal_Type",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "Signal_Strength",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "Timestamp",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "purge_id",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      }
+    ]
+  },
+  {
+    "className": "PowerLineMonitor",
+    "attributes": [
+      {
+        "name": "LineMonitor_ID",
+        "type": "string",
+        "required": true,
+        "primaryKey": true
+      },
+      {
+        "name": "Voltage_Level",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "Timestamp",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "purge_id",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      }
+    ]
+  },
+  {
+    "className": "PowerRelay",
+    "attributes": [
+      {
+        "name": "Relay_ID",
+        "type": "string",
+        "required": true,
+        "primaryKey": true
+      },
+      {
+        "name": "Voltage_Input",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "Current_Output",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "Timestamp",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "purge_id",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      }
+    ]
+  },
+  {
+    "className": "PowerLoadBalancer",
+    "attributes": [
+      {
+        "name": "LoadBalancer_ID",
+        "type": "string",
+        "required": true,
+        "primaryKey": true
+      },
+      {
+        "name": "Voltage_Level",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "Current_Level",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "Timestamp",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "purge_id",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      }
+    ]
+  },
+  {
+    "className": "PowerConsumptionLogger",
+    "attributes": [
+      {
+        "name": "Logger_ID",
+        "type": "string",
+        "required": true,
+        "primaryKey": true
+      },
+      {
+        "name": "Power_Consumption",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "Timestamp",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "purge_id",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      }
+    ]
+  },
+  {
+    "className": "TrackStressReading",
+    "attributes": [
+      {
+        "name": "Reading_ID",
+        "type": "string",
+        "required": true,
+        "primaryKey": true
+      },
+      {
+        "name": "Stress_Level",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "Timestamp",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "purge_id",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      }
+    ]
+  },
+  {
+    "className": "StressCalibrationData",
+    "attributes": [
+      {
+        "name": "Calibration_ID",
+        "type": "string",
+        "required": true,
+        "primaryKey": true
+      },
+      {
+        "name": "Calibration_Value",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "Timestamp",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "purge_id",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      }
+    ]
+  },
+  {
+    "className": "StressThresholdAlert",
+    "attributes": [
+      {
+        "name": "Alert_ID",
+        "type": "string",
+        "required": true,
+        "primaryKey": true
+      },
+      {
+        "name": "Stress_Level",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "Timestamp",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "purge_id",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      }
+    ]
+  },
+  {
+    "className": "StressPerformanceLog",
+    "attributes": [
+      {
+        "name": "Log_ID",
+        "type": "string",
+        "required": true,
+        "primaryKey": true
+      },
+      {
+        "name": "Sensor_Performance",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "Timestamp",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "purge_id",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      }
+    ]
+  },
+  {
+    "className": "WearReading",
+    "attributes": [
+      {
+        "name": "Reading_ID",
+        "type": "string",
+        "required": true,
+        "primaryKey": true
+      },
+      {
+        "name": "Wear_Level",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "Timestamp",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "purge_id",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      }
+    ]
+  },
+  {
+    "className": "WearCalibrationData",
+    "attributes": [
+      {
+        "name": "Calibration_ID",
+        "type": "string",
+        "required": true,
+        "primaryKey": true
+      },
+      {
+        "name": "Calibration_Value",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "Timestamp",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "purge_id",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      }
+    ]
+  },
+  {
+    "className": "WearThresholdAlert",
+    "attributes": [
+      {
+        "name": "Alert_ID",
+        "type": "string",
+        "required": true,
+        "primaryKey": true
+      },
+      {
+        "name": "Wear_Level",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "Timestamp",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "purge_id",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      }
+    ]
+  },
+  {
+    "className": "WearPerformanceLog",
+    "attributes": [
+      {
+        "name": "Log_ID",
+        "type": "string",
+        "required": true,
+        "primaryKey": true
+      },
+      {
+        "name": "Sensor_Performance",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "Timestamp",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "purge_id",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      }
+    ]
+  },
+  {
+    "className": "ObstructionReading",
+    "attributes": [
+      {
+        "name": "Reading_ID",
+        "type": "string",
+        "required": true,
+        "primaryKey": true
+      },
+      {
+        "name": "Obstruction_Status",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "Timestamp",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "purge_id",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      }
+    ]
+  },
+  {
+    "className": "ObstructionCalibrationData",
+    "attributes": [
+      {
+        "name": "Calibration_ID",
+        "type": "string",
+        "required": true,
+        "primaryKey": true
+      },
+      {
+        "name": "Calibration_Value",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "Timestamp",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "purge_id",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      }
+    ]
+  },
+  {
+    "className": "ObstructionAlert",
+    "attributes": [
+      {
+        "name": "Alert_ID",
+        "type": "string",
+        "required": true,
+        "primaryKey": true
+      },
+      {
+        "name": "Obstruction_Status",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "Timestamp",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "purge_id",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      }
+    ]
+  },
+  {
+    "className": "ObstructionPerformanceLog",
+    "attributes": [
+      {
+        "name": "Log_ID",
+        "type": "string",
+        "required": true,
+        "primaryKey": true
+      },
+      {
+        "name": "Sensor_Performance",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "Timestamp",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "purge_id",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      }
+    ]
+  },
+  {
+    "className": "VibrationReading",
+    "attributes": [
+      {
+        "name": "Reading_ID",
+        "type": "string",
+        "required": true,
+        "primaryKey": true
+      },
+      {
+        "name": "Vibration_Level",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "Timestamp",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "purge_id",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      }
+    ]
+  },
+  {
+    "className": "VibrationCalibrationData",
+    "attributes": [
+      {
+        "name": "Calibration_ID",
+        "type": "string",
+        "required": true,
+        "primaryKey": true
+      },
+      {
+        "name": "Calibration_Value",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "Timestamp",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "purge_id",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      }
+    ]
+  },
+  {
+    "className": "VibrationThresholdAlert",
+    "attributes": [
+      {
+        "name": "Alert_ID",
+        "type": "string",
+        "required": true,
+        "primaryKey": true
+      },
+      {
+        "name": "Vibration_Level",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "Timestamp",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "purge_id",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      }
+    ]
+  },
+  {
+    "className": "VibrationPerformanceLog",
+    "attributes": [
+      {
+        "name": "Log_ID",
+        "type": "string",
+        "required": true,
+        "primaryKey": true
+      },
+      {
+        "name": "Sensor_Performance",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "Timestamp",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "purge_id",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      }
+    ]
+  },
+  {
+    "className": "SwitchPositionReading",
+    "attributes": [
+      {
+        "name": "Reading_ID",
+        "type": "string",
+        "required": true,
+        "primaryKey": true
+      },
+      {
+        "name": "Position",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "Timestamp",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "purge_id",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      }
+    ]
+  },
+  {
+    "className": "PositionCalibrationData",
+    "attributes": [
+      {
+        "name": "Calibration_ID",
+        "type": "string",
+        "required": true,
+        "primaryKey": true
+      },
+      {
+        "name": "Calibration_Value",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "Timestamp",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "purge_id",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      }
+    ]
+  },
+  {
+    "className": "PositionAlert",
+    "attributes": [
+      {
+        "name": "Alert_ID",
+        "type": "string",
+        "required": true,
+        "primaryKey": true
+      },
+      {
+        "name": "Position",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "Timestamp",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "purge_id",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      }
+    ]
+  },
+  {
+    "className": "PositionPerformanceLog",
+    "attributes": [
+      {
+        "name": "Log_ID",
+        "type": "string",
+        "required": true,
+        "primaryKey": true
+      },
+      {
+        "name": "Sensor_Performance",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "Timestamp",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "purge_id",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      }
+    ]
+  },
+  {
+    "className": "ControlLeverReading",
+    "attributes": [
+      {
+        "name": "LeverReading_ID",
+        "type": "string",
+        "required": true,
+        "primaryKey": true
+      },
+      {
+        "name": "Lever_Position",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "Timestamp",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "purge_id",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      }
+    ]
+  },
+  {
+    "className": "ControlLeverCalibrationData",
+    "attributes": [
+      {
+        "name": "Calibration_ID",
+        "type": "string",
+        "required": true,
+        "primaryKey": true
+      },
+      {
+        "name": "Calibration_Value",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "Timestamp",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "purge_id",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      }
+    ]
+  },
+  {
+    "className": "ControlLeverAlert",
+    "attributes": [
+      {
+        "name": "Alert_ID",
+        "type": "string",
+        "required": true,
+        "primaryKey": true
+      },
+      {
+        "name": "Lever_Position",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "Timestamp",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "purge_id",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      }
+    ]
+  },
+  {
+    "className": "ControlLeverPerformanceLog",
+    "attributes": [
+      {
+        "name": "Log_ID",
+        "type": "string",
+        "required": true,
+        "primaryKey": true
+      },
+      {
+        "name": "Lever_Status",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "Timestamp",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "purge_id",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      }
+    ]
+  },
+  {
+    "className": "PowerMonitorReading",
+    "attributes": [
+      {
+        "name": "PowerReading_ID",
+        "type": "string",
+        "required": true,
+        "primaryKey": true
+      },
+      {
+        "name": "Voltage_Level",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "Timestamp",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "purge_id",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      }
+    ]
+  },
+  {
+    "className": "PowerMonitorCalibrationData",
+    "attributes": [
+      {
+        "name": "Calibration_ID",
+        "type": "string",
+        "required": true,
+        "primaryKey": true
+      },
+      {
+        "name": "Calibration_Value",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "Timestamp",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "purge_id",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      }
+    ]
+  },
+  {
+    "className": "PowerMonitorAlert",
+    "attributes": [
+      {
+        "name": "Alert_ID",
+        "type": "string",
+        "required": true,
+        "primaryKey": true
+      },
+      {
+        "name": "Voltage_Level",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "Timestamp",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "purge_id",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      }
+    ]
+  },
+  {
+    "className": "PowerMonitorPerformanceLog",
+    "attributes": [
+      {
+        "name": "Log_ID",
+        "type": "string",
+        "required": true,
+        "primaryKey": true
+      },
+      {
+        "name": "Sensor_Performance",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "Timestamp",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "purge_id",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      }
+    ]
+  },
+  {
+    "className": "FeedbackSystemLog",
+    "attributes": [
+      {
+        "name": "FeedbackLog_ID",
+        "type": "string",
+        "required": true,
+        "primaryKey": true
+      },
+      {
+        "name": "Feedback_Status",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "Timestamp",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "purge_id",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      }
+    ]
+  },
+  {
+    "className": "FeedbackCalibrationData",
+    "attributes": [
+      {
+        "name": "Calibration_ID",
+        "type": "string",
+        "required": true,
+        "primaryKey": true
+      },
+      {
+        "name": "Calibration_Value",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "Timestamp",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "purge_id",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      }
+    ]
+  },
+  {
+    "className": "FeedbackAlert",
+    "attributes": [
+      {
+        "name": "Alert_ID",
+        "type": "string",
+        "required": true,
+        "primaryKey": true
+      },
+      {
+        "name": "Feedback_Status",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "Timestamp",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "purge_id",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      }
+    ]
+  },
+  {
+    "className": "FeedbackPerformanceLog",
+    "attributes": [
+      {
+        "name": "Log_ID",
+        "type": "string",
+        "required": true,
+        "primaryKey": true
+      },
+      {
+        "name": "Feedback_Performance",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "Timestamp",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "purge_id",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      }
+    ]
+  },
+  {
+    "className": "SignalLightReading",
+    "attributes": [
+      {
+        "name": "LightReading_ID",
+        "type": "string",
+        "required": true,
+        "primaryKey": true
+      },
+      {
+        "name": "Light_Status",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "Timestamp",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "purge_id",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      }
+    ]
+  },
+  {
+    "className": "SignalLightCalibrationData",
+    "attributes": [
+      {
+        "name": "Calibration_ID",
+        "type": "string",
+        "required": true,
+        "primaryKey": true
+      },
+      {
+        "name": "Calibration_Value",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "Timestamp",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "purge_id",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      }
+    ]
+  },
+  {
+    "className": "SignalLightAlert",
+    "attributes": [
+      {
+        "name": "Alert_ID",
+        "type": "string",
+        "required": true,
+        "primaryKey": true
+      },
+      {
+        "name": "Light_Status",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "Timestamp",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "purge_id",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      }
+    ]
+  },
+  {
+    "className": "SignalLightPerformanceLog",
+    "attributes": [
+      {
+        "name": "Log_ID",
+        "type": "string",
+        "required": true,
+        "primaryKey": true
+      },
+      {
+        "name": "Light_Performance",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "Timestamp",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "purge_id",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      }
+    ]
+  },
+  {
+    "className": "SignalTimerLog",
+    "attributes": [
+      {
+        "name": "TimerLog_ID",
+        "type": "string",
+        "required": true,
+        "primaryKey": true
+      },
+      {
+        "name": "Time_Interval",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "Timestamp",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "purge_id",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      }
+    ]
+  },
+  {
+    "className": "SignalTimerCalibrationData",
+    "attributes": [
+      {
+        "name": "Calibration_ID",
+        "type": "string",
+        "required": true,
+        "primaryKey": true
+      },
+      {
+        "name": "Calibration_Value",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "Timestamp",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "purge_id",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      }
+    ]
+  },
+  {
+    "className": "SignalTimerAlert",
+    "attributes": [
+      {
+        "name": "Alert_ID",
+        "type": "string",
+        "required": true,
+        "primaryKey": true
+      },
+      {
+        "name": "Time_Interval",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "Timestamp",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "purge_id",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      }
+    ]
+  },
+  {
+    "className": "SignalTimerPerformanceLog",
+    "attributes": [
+      {
+        "name": "Log_ID",
+        "type": "string",
+        "required": true,
+        "primaryKey": true
+      },
+      {
+        "name": "Timer_Performance",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "Timestamp",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "purge_id",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      }
+    ]
+  },
+  {
+    "className": "SignalStatusLog",
+    "attributes": [
+      {
+        "name": "StatusLog_ID",
+        "type": "string",
+        "required": true,
+        "primaryKey": true
+      },
+      {
+        "name": "Signal_Status",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "Timestamp",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "purge_id",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      }
+    ]
+  },
+  {
+    "className": "SignalStatusCalibrationData",
+    "attributes": [
+      {
+        "name": "Calibration_ID",
+        "type": "string",
+        "required": true,
+        "primaryKey": true
+      },
+      {
+        "name": "Calibration_Value",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "Timestamp",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "purge_id",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      }
+    ]
+  },
+  {
+    "className": "SignalStatusAlert",
+    "attributes": [
+      {
+        "name": "Alert_ID",
+        "type": "string",
+        "required": true,
+        "primaryKey": true
+      },
+      {
+        "name": "Signal_Status",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "Timestamp",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "purge_id",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      }
+    ]
+  },
+  {
+    "className": "SignalStatusPerformanceLog",
+    "attributes": [
+      {
+        "name": "Log_ID",
+        "type": "string",
+        "required": true,
+        "primaryKey": true
+      },
+      {
+        "name": "Signal_Performance",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "Timestamp",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "purge_id",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      }
+    ]
+  },
+  {
+    "className": "TransmitterLog",
+    "attributes": [
+      {
+        "name": "TransmitterLog_ID",
+        "type": "string",
+        "required": true,
+        "primaryKey": true
+      },
+      {
+        "name": "Signal_Strength",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "Timestamp",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "purge_id",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      }
+    ]
+  },
+  {
+    "className": "TransmitterCalibrationData",
+    "attributes": [
+      {
+        "name": "Calibration_ID",
+        "type": "string",
+        "required": true,
+        "primaryKey": true
+      },
+      {
+        "name": "Calibration_Value",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "Timestamp",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "purge_id",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      }
+    ]
+  },
+  {
+    "className": "TransmitterAlert",
+    "attributes": [
+      {
+        "name": "Alert_ID",
+        "type": "string",
+        "required": true,
+        "primaryKey": true
+      },
+      {
+        "name": "Signal_Strength",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "Timestamp",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "purge_id",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      }
+    ]
+  },
+  {
+    "className": "TransmitterPerformanceLog",
+    "attributes": [
+      {
+        "name": "Log_ID",
+        "type": "string",
+        "required": true,
+        "primaryKey": true
+      },
+      {
+        "name": "Transmitter_Performance",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "Timestamp",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "purge_id",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      }
+    ]
+  },
+  {
+    "className": "LineMonitorReading",
+    "attributes": [
+      {
+        "name": "MonitorReading_ID",
+        "type": "string",
+        "required": true,
+        "primaryKey": true
+      },
+      {
+        "name": "Voltage_Level",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "Timestamp",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "purge_id",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      }
+    ]
+  },
+  {
+    "className": "LineMonitorCalibrationData",
+    "attributes": [
+      {
+        "name": "Calibration_ID",
+        "type": "string",
+        "required": true,
+        "primaryKey": true
+      },
+      {
+        "name": "Calibration_Value",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "Timestamp",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "purge_id",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      }
+    ]
+  },
+  {
+    "className": "LineMonitorAlert",
+    "attributes": [
+      {
+        "name": "Alert_ID",
+        "type": "string",
+        "required": true,
+        "primaryKey": true
+      },
+      {
+        "name": "Voltage_Level",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "Timestamp",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "purge_id",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      }
+    ]
+  },
+  {
+    "className": "LineMonitorPerformanceLog",
+    "attributes": [
+      {
+        "name": "Log_ID",
+        "type": "string",
+        "required": true,
+        "primaryKey": true
+      },
+      {
+        "name": "Monitor_Performance",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "Timestamp",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "purge_id",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      }
+    ]
+  },
+  {
+    "className": "RelayOperationLog",
+    "attributes": [
+      {
+        "name": "RelayLog_ID",
+        "type": "string",
+        "required": true,
+        "primaryKey": true
+      },
+      {
+        "name": "Voltage_Input",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "Current_Output",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "Timestamp",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "purge_id",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      }
+    ]
+  },
+  {
+    "className": "RelayCalibrationData",
+    "attributes": [
+      {
+        "name": "Calibration_ID",
+        "type": "string",
+        "required": true,
+        "primaryKey": true
+      },
+      {
+        "name": "Calibration_Value",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "Timestamp",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "purge_id",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      }
+    ]
+  },
+  {
+    "className": "RelayAlert",
+    "attributes": [
+      {
+        "name": "Alert_ID",
+        "type": "string",
+        "required": true,
+        "primaryKey": true
+      },
+      {
+        "name": "Relay_Status",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "Timestamp",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "purge_id",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      }
+    ]
+  },
+  {
+    "className": "RelayPerformanceLog",
+    "attributes": [
+      {
+        "name": "Log_ID",
+        "type": "string",
+        "required": true,
+        "primaryKey": true
+      },
+      {
+        "name": "Relay_Performance",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "Timestamp",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "purge_id",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      }
+    ]
+  },
+  {
+    "className": "LoadBalancerLog",
+    "attributes": [
+      {
+        "name": "LoadBalancerLog_ID",
+        "type": "string",
+        "required": true,
+        "primaryKey": true
+      },
+      {
+        "name": "Voltage_Level",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "Current_Level",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "Timestamp",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "purge_id",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      }
+    ]
+  },
+  {
+    "className": "LoadBalancerCalibrationData",
+    "attributes": [
+      {
+        "name": "Calibration_ID",
+        "type": "string",
+        "required": true,
+        "primaryKey": true
+      },
+      {
+        "name": "Calibration_Value",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "Timestamp",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "purge_id",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      }
+    ]
+  },
+  {
+    "className": "LoadBalancerAlert",
+    "attributes": [
+      {
+        "name": "Alert_ID",
+        "type": "string",
+        "required": true,
+        "primaryKey": true
+      },
+      {
+        "name": "Voltage_Level",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "Timestamp",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "purge_id",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      }
+    ]
+  },
+  {
+    "className": "LoadBalancerPerformanceLog",
+    "attributes": [
+      {
+        "name": "Log_ID",
+        "type": "string",
+        "required": true,
+        "primaryKey": true
+      },
+      {
+        "name": "LoadBalancer_Performance",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "Timestamp",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "purge_id",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      }
+    ]
+  },
+  {
+    "className": "PowerConsumptionLog",
+    "attributes": [
+      {
+        "name": "ConsumptionLog_ID",
+        "type": "string",
+        "required": true,
+        "primaryKey": true
+      },
+      {
+        "name": "Power_Consumption",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "Timestamp",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "purge_id",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      }
+    ]
+  },
+  {
+    "className": "PowerConsumptionCalibrationData",
+    "attributes": [
+      {
+        "name": "Calibration_ID",
+        "type": "string",
+        "required": true,
+        "primaryKey": true
+      },
+      {
+        "name": "Calibration_Value",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "Timestamp",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "purge_id",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      }
+    ]
+  },
+  {
+    "className": "PowerConsumptionAlert",
+    "attributes": [
+      {
+        "name": "Alert_ID",
+        "type": "string",
+        "required": true,
+        "primaryKey": true
+      },
+      {
+        "name": "Power_Consumption",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "Timestamp",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "purge_id",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      }
+    ]
+  },
+  {
+    "className": "PowerConsumptionPerformanceLog",
+    "attributes": [
+      {
+        "name": "Log_ID",
+        "type": "string",
+        "required": true,
+        "primaryKey": true
+      },
+      {
+        "name": "Consumption_Performance",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "Timestamp",
+        "type": "number",
+        "required": false,
+        "primaryKey": false
+      },
+      {
+        "name": "purge_id",
+        "type": "string",
+        "required": false,
+        "primaryKey": false
+      }
+    ]
+  }
+]
